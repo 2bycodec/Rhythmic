@@ -1,4 +1,6 @@
 console.log("Welcome to Rhythmic");
+console.log("Created By Ayush Baral")
+
 
 // Initialize the Variables
 let songIndex = 0;
@@ -15,8 +17,13 @@ let songs = [
     {songName: "Passori - Shae Gill & Ali Sethi", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName: "Jaan Hai Meri - Armaan Malik", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
     {songName: "Hans Mat Pagli - Sonu Nigam", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Main Akela Hoon - Tony Kakkar", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"}
+    {songName: "Main Akela Hoon - Tony Kakkar", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Jhoom - Ali Zafar", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
+    {songName: "Dynamite - BTS", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
+    {songName: "Dil Ibaadat - KK", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
+    {songName: "Tere Bina - Zaeden", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"}
 ]
+
 
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
