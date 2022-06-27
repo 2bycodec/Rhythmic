@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rhythmic - Web Music Player</title>
+        <link rel="shortcut icon" href="/image.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>     
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        </head>
+<body>
+    
+    <!-- component -->
+
+<div class="md:flex flex-col md:flex-row md:min-h-screen w-full" >
+  <div style="    background-color: #000;" @click.away="open = false" class="flex flex-col w-full md:w-64 text-gray-700 flex-shrink-0" x-data="{ open: false }">
+    <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-widest uppercase rounded-lg text-white focus:outline-none focus:shadow-outline">Rhythmic</a>
+      <button class="rounded-lg md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-white">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'block': open, 'hidden': !open}" class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
+      <!-- <a class="block px-4 py-2 mt-2 text-xs font-semibold rounded-lg  focus:text-white hover:text-white text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Blog</a> -->
+      <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg">
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <section class="text-gray-600 body-font relative w-full">
+    <div class="py-4 mx-auto">
+      <div class="flex flex-col px-6 w-full mb-12">
+        <h1 id="lblGreetings" class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200"></h1>
+      </div>
+    </div> 
+
+
+
+        <div class="songList w-full"> 
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">04:00 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">04:12 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">03:38 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">03:35 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">05:17 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName text-xs">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp text-xs">02:47 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+</div>
+
+
+    <div style="    background-color: #181818;" class="bottom w-full">
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName" class="text-xs">One Direction – Night Changes</span>
+        </div>
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script >
+      var myDate = new Date();
+      var hrs = myDate.getHours();
+  
+      var greet;
+  
+      if (hrs < 12)
+          greet = 'Good Morning';
+      else if (hrs >= 12 && hrs <= 17)
+          greet = 'Good Afternoon';
+      else if (hrs >= 17 && hrs <= 24)
+          greet = 'Good Evening';
+  
+      document.getElementById('lblGreetings').innerHTML =
+          '<b>' + greet + '</b>';
+
+  </script>
+</body>
+</html>
