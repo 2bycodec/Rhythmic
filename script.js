@@ -1,5 +1,5 @@
-console.log("Welcome to Rhythmic");
-console.log("Created By Ayush Baral")
+console.log("Welcome to Rhythmic | 1.0.1v");
+console.log("Created By Ayush Baral");
 
 
 // Initialize the Variables
