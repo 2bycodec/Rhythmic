@@ -12,12 +12,12 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "One Direction – Night Changes", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "The Local Train - Choo Lo", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Passori - Shae Gill & Ali Sethi", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Jaan Hai Meri - Armaan Malik", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Hans Mat Pagli - Sonu Nigam", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Main Akela Hoon - Tony Kakkar", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Tere Naal ", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Mahiye Jinna Sohna", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Jaane Bekhabar", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Khayal Chill Mashup", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Nostalgic Mashup", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Locked Away Mashup", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
     {songName: "Jhoom - Ali Zafar", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
     {songName: "Dynamite - BTS", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
     {songName: "Dil Ibaadat - KK", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
