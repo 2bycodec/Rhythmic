@@ -20,17 +20,7 @@ This project is not affiliated with Spotify and is solely intended for education
 
 Rhythmic includes several features commonly found in music streaming platforms:
 
-- **User Authentication**: Users can create accounts, log in, and log out securely. User authentication helps personalize the experience by saving user preferences, playlists, and other data.
-
-- **Search and Discover**: Users can search for their favorite songs, albums, artists, and playlists. Rhythmic provides a recommendation engine to suggest new music based on the user's listening history and preferences.
-
-- **Playlists**: Users can create their own playlists, add songs to them, and organize their music library. Playlists can be made public or private, and users can follow playlists created by other users.
-
 - **Music Player**: Rhythmic features a built-in music player that allows users to play, pause, skip tracks, adjust volume, and repeat or shuffle songs. The player also displays the album cover, artist information, and lyrics (when available).
-
-- **Artist Pages**: Users can explore artist profiles, view their discography, and listen to their top tracks. Users can also follow their favorite artists to receive updates about new releases.
-
-- **Social Features**: Rhythmic includes social features such as the ability to follow other users, view their public playlists, and share music with friends through social media platforms.
 
 - **Responsive Design**: The website is designed to be responsive and work seamlessly across different devices, including desktops, tablets, and mobile phones.
 
@@ -48,11 +38,7 @@ To get started with Rhythmic on your local machine, please follow these steps:
 
 Upon accessing Rhythmic, you can create a new account or log in with your existing account. Once logged in, you can explore the various features and functionalities available. Some key actions include:
 
-- Search for songs, albums, artists, and playlists using the search bar.
 - Play songs by clicking on the play button next to the track.
-- Create and manage your own playlists.
-- Follow your favorite artists and other users.
-- Customize your account settings and preferences.
 
 Feel free to experiment and enjoy the music streaming experience!
 
